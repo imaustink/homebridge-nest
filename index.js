@@ -36,6 +36,7 @@ class NestPlatform {
             this.log('Fetching Nest devices.');
 
             const generateAccessories = function(data) {
+                console.log(data, data);
                 const foundAccessories = [];
 
                 const loadDevices = function(DeviceType) {
