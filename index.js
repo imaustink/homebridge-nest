@@ -73,6 +73,8 @@ class NestPlatform {
                 loadDevices(LockAccessory);
                 loadDevices(SecureAccessory);
 
+                console.log("foundAccessories", foundAccessories);
+
                 return foundAccessories;
             }.bind(this);
 
