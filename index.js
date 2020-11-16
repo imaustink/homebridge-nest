@@ -36,7 +36,6 @@ class NestPlatform {
             this.log('Fetching Nest devices.');
 
             const generateAccessories = function(data) {
-                console.log(data, data);
                 const foundAccessories = [];
 
                 const loadDevices = function(DeviceType) {
@@ -73,8 +72,6 @@ class NestPlatform {
                 loadDevices(ProtectAccessory);
                 loadDevices(LockAccessory);
                 loadDevices(SecureAccessory);
-
-                console.log("foundAccessories", foundAccessories);
 
                 return foundAccessories;
             }.bind(this);
